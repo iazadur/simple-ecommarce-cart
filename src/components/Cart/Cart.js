@@ -13,7 +13,7 @@ const Cart = (props) => {
 
             <ul>
                 {
-                    cart.map(product => <li>{product.name}</li>)
+                    cart.map(product => <li key={product.key}>{product.name}</li>)
                 }
             </ul>
 
